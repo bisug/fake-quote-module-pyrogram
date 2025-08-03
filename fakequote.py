@@ -7,7 +7,7 @@ import asyncio
 
 from pyrogram import filters
 from pyrogram.types import Message
-from YOUR APP import app #Replace Your app with your app instance
+from YOUR APP import app #Replace Your app with your app
 
 fetch = AsyncClient(
     http2=True,
@@ -27,7 +27,7 @@ fetch = AsyncClient(
 class QuotlyException(Exception):
     ...
 
-async def schedule_deletion(*msgs, delay: int = 60):
+async def schedule_deletion(*msgs, delay: int = 300): #autodeletes in 5 minutes 
     await asyncio.sleep(delay)
     for m in msgs:
         with suppress(Exception):
