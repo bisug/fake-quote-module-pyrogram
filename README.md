@@ -47,19 +47,6 @@ or
 pip install httpx pyrogram tgcrypto
 ```
 
-3. Replace this line:
-```python
-from YOUR APP import app
-```
-with your actual Pyrogram app import:
-```python
-from your_bot import app  # Or whatever your app file is
-```
-
-4. Done! Your bot can now generate fake quote stickers.
-
----
-
 ---
 
 ## 🧠 How it works
